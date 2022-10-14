@@ -9,14 +9,42 @@ h1,h2,h3,h4,h5,h6{
 }
 header{
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     .logo{
         display: flex;
+        align-items: center;
+        margin-left: 2rem;
+        flex: 5 1 400px;
         img{
             width: 6vw;
             height: 6vw;
         }
     }
     nav{
-
+        flex: 2 1 400px;
+        ul{
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            li{
+                a{
+                    color: #09777d;
+                    text-decoration: none;
+                    font-size: 1.35rem;
+                }
+            }
+        }
+    }
+}
+@media(max-width:550px){
+    header{
+        .logo{
+            margin-left: 0.5rem;
+            img{
+                width: 15vw;
+                height: 15vw;
+            }
+        }
     }
 }

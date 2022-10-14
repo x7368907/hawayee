@@ -11,11 +11,39 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 header .logo {
   display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  flex: 5 1 400px;
 }
 header .logo img {
   width: 6vw;
   height: 6vw;
+}
+header nav {
+  flex: 2 1 400px;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+header nav ul li a {
+  color: #09777d;
+  text-decoration: none;
+  font-size: 1.35rem;
+}
+
+@media (max-width: 550px) {
+  header .logo {
+    margin-left: 0.5rem;
+  }
+  header .logo img {
+    width: 15vw;
+    height: 15vw;
+  }
 }/*# sourceMappingURL=style.css.map */
